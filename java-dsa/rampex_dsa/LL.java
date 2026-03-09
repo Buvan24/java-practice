@@ -30,6 +30,36 @@ class LL_Methods{
         newNode.next=head;
         head=newNode;
     }
+    void insert_pos(int pos,int data){
+        Node newNode=new Node(data);
+        Node temp=head;
+        for(int i=1;i<pos;i++){
+            temp=temp.next;
+        }
+        newNode.next=temp.next;
+        temp.next=newNode;
+    }
+
+    void delete(){
+        if(head==null){
+            System.out.println("LL empty");
+            return;
+        }
+        Node temp=head;
+        while (temp.next.next!=null) {
+            temp=temp.next;
+        }
+        temp.next=null;
+
+    }
+    void delete_b(){
+         if(head==null){
+            System.out.println("LL empty");
+            return;
+        }
+        Node temp=head;
+         head=temp.next;
+    }
 
     void display(){
         Node temp=head;
@@ -38,6 +68,7 @@ class LL_Methods{
             temp=temp.next;
     }
     System.out.print(temp.data+"->null");
+    System.out.println();
 }
 }
 public class LL{
@@ -49,6 +80,11 @@ public class LL{
         obj.insert(40);
         obj.insert(50);
         obj.insert_begin(5);
+        obj.display();
+        obj.insert_pos(3, 25);
+        obj.delete();
+        obj.display();
+        obj.delete_b();
         obj.display();
 
     }
