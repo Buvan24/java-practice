@@ -105,13 +105,11 @@ public class LL{
         obj.insert(50);
      // obj.insert_begin(5);
      obj.display();
-     obj.insert_pos(3, 25);
-     obj.display();
-     obj.delete_pos(10                                                                           );
+     obj.insert_pos(7, 100);
      obj.display();
      //   obj.delete();
        // obj.delete_b();
        // obj.display();
 
     }
-}
+}                                                                             
