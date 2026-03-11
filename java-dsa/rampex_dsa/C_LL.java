@@ -110,7 +110,7 @@ class C_LL{
       //  obj.display();
         obj.insert_pos(5,100);
         obj.display();
-        obj.delete_pos(5);
+        obj.delete_pos(2);
         obj.display();
     }
 }

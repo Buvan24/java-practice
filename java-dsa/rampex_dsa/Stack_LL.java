@@ -10,7 +10,7 @@ class Node{
 class Stack_M{
     Node top;
 
-    boolean isEmpty(){
+    boolean isEmpty(){                                                                                                                                                                                        
         if(top==null){
             return true;
         }
