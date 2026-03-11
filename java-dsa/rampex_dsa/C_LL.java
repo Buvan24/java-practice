@@ -66,6 +66,21 @@ class C_LL_Methods{
         }
         temp.next=head.next;
         head=head.next;
+    }
+    void delete_pos(int pos){
+        if(pos==1){
+            delete_Begin();
+            return;
+        }
+        Node temp=head;
+        for(int i=1;i<pos-1;i++){
+            temp=temp.next;
+            if(temp==head || temp.next==head){
+                System.out.println("Invalid position");
+                return;
+            }
+        }
+        temp.next=temp.next.next;
 
     }
 
@@ -94,6 +109,8 @@ class C_LL{
       //  obj.delete_Begin();
       //  obj.display();
         obj.insert_pos(5,100);
+        obj.display();
+        obj.delete_pos(5);
         obj.display();
     }
 }
