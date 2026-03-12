@@ -20,7 +20,7 @@ class Queue{
             return true;
         }
         return false;
-    }
+    }                   
 
     void enqueue(int data){
         if(isFull()){
