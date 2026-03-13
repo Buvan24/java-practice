@@ -45,6 +45,14 @@ class Binary_Method{
 			System.out.print(root.data+" ");
 		}
 	}
+
+	int height(Node root) {
+		if(root==null) return 0;
+		int left = height(root.left);
+		int right = height(root.right);
+		return Math.max(left, right)+1;
+	}
+	
 }
 public class BinaryTree {
 	public static void main(String[] args) {
