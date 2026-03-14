@@ -39,14 +39,36 @@ class Graph_Method{
 	 
 	}
 
+	void bfs(int st){
+		boolean vis[]=new boolean[size];
+		int store[]=new int[size];
+		int front=0,rear=0;
+		vis[st]=true;
+		store[rear++]=st;
+		while (front<rear) {
+			int node=store[front++];
+			System.out.print(node+" ");
+			Node temp=arr[node];
+			while (temp!=null) {
+				if(!vis[temp.data]){
+					vis[temp.data]=true;
+					store[rear++]=temp.data;
+				}
+				temp=temp.next;
+				
+			}
+		}
+
+	}
+
 }
 public class GraphLinkedList {
 	public static void main(String[] args) {
 		Graph_Method obj = new Graph_Method(5);
 		obj.addedge(0, 1);
         obj.addedge(0, 2);
-       obj.addedge(1, 3);
-       obj.addedge(1, 4);
-		obj.dfs(0);
+    //    obj.addedge(1, 3);
+    //    obj.addedge(1, 4);
+		obj.bfs(0);
 	}
 }
