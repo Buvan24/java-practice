@@ -1,6 +1,23 @@
 public class Dijkstra {
+    static int findmin(int dis[],boolean[] vis,int v){
+        int min_node=-1;
+        for(int i=0;i<v;i++){
+            if(!vis[i] && min_node==-1 || dis[i] < dis[min_node] ){
+                min_node=i;
+            }
+        }
+        return min_node;
+    }
     static void dijkstra(int[][] graph,int v,int src){
-
+        int dis[]=new int [v];
+        boolean vis[]=new boolean[v];
+        for(int i=0;i<v;i++){
+            dis[i]=Integer.MAX_VALUE;
+        }
+        dis[src]=0;
+        for(int i=0;i<v;i++){
+            int min_node=findmin(dis,vis,v);
+        }
     }
   public static void main(String[] args) {
     int v=5;
