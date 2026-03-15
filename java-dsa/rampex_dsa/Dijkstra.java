@@ -1,4 +1,4 @@
-public class DijkstraConcept {
+public class Dijkstra {
 	static int findmin(int distance[], boolean visited[], int v) {
 		// To find the node's nearest neighbour
 		int min_node = -1;
@@ -47,27 +47,27 @@ public class DijkstraConcept {
 }
 
 /*
- * 
- * pick nearest unvisited neighbour
- * update its neifhbors
- * mark it as visited
- * 
- * 
- * 
- * 10
- * 0---------1
- * | |
- * 5| |2
- * | |
- * 3---------4
- * 2
- * 
- * 0--->4 =7
- * 10+2=12
- * 5+2=7
- * 
- * 0--->1=9
- * 10
- * 5+2+2=9
- * 
- */
+
+pick nearest unvisited neighbour
+update its neifhbors
+mark it as visited
+
+
+
+     10
+ 0---------1
+ |         |
+5|         |2
+ |         |
+ 3---------4
+      2 
+
+0--->4 =7
+10+2=12
+5+2=7
+
+0--->1=9
+10
+5+2+2=9
+
+*/
