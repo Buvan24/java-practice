@@ -21,13 +21,14 @@ public class Dijkstra {
 			visited[min_node] = true;
 			for (int j = 0; j < v; j++) { // To visit min_node neighbour
 				if (graph[min_node][j] != 0 && !visited[j]) {
-					int newdist = distance[min_node] + graph[min_node][j];
+			 		int newdist = distance[min_node] + graph[min_node][j];
 					if (newdist < distance[j]) {
 						distance[j] = newdist;
 					}
 				}
 			}
 		}
+		// to print
 		for (int i = 0; i < v; i++) {
 			System.out.println("vertex from 0 to " + i + " " + distance[i]);
 		}
@@ -49,7 +50,7 @@ public class Dijkstra {
 /*
 
 pick nearest unvisited neighbour
-update its neifhbors
+update its neighbors
 mark it as visited
 
 
