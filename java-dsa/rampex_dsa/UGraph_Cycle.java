@@ -47,7 +47,7 @@ public class UGraph_Cycle {
  * 
 
  * 	0 is connected with 1,same time 1 is connected with 0 its not a cycle.
- * 	because , is a parent for 1 . Parent noded will not forms a cycle
+ * 	because ,0 is a parent for 1 . Parent noded will not forms a cycle
  * 	(so the condition i!= parent is given)
 
  * 

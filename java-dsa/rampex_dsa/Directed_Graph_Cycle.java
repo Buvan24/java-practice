@@ -9,11 +9,11 @@ public class Directed_Graph_Cycle {
 						return true;						
 					}
 				}
-					else if(stack[i]) {
-						return true;
-					}
-                }
-			}
+				else if(stack[i]) {
+					return true;
+				}
+            }
+		}
 		return false;
 		}
 	static boolean cycle(int graph[][],int v) {
