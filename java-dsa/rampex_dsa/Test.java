@@ -24,3 +24,8 @@
 // 		System.out.println(n-ans);
 // 	}
 // }
+ public class Test {
+    public static void main(String[] args) {
+        
+    }
+ }
