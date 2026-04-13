@@ -1,3 +1,7 @@
 *.class
-*.xlsx
+*.txt
+*.xml
+.classpath
+.project
+.settings/
 .vscode/

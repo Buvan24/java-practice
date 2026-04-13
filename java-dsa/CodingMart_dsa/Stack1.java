@@ -1,5 +1,5 @@
 import java.util.*;
-public class stack {
+public class Stack1 {
     public static void main(String[] args) {
         String s="12(bc)";
         String res="";
